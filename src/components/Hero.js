@@ -27,7 +27,7 @@ const Hero = () => {
         <div
           className="image-background"
           style={{
-            backgroundImage: `url('/bg.jpg')`, 
+            backgroundImage: `url('https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio/blob/gh-pages/bg.jpg?raw=true')`, 
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -54,7 +54,7 @@ const Hero = () => {
             </p>
             {/* Adding the portrait image between introduction and contact */}
             <div className="portrait-container">
-              <img src="/portrait.png " alt="Pom Portrait" className="portrait" />
+              <img src="https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio/blob/gh-pages/portrait.png?raw=true" alt="Pom Portrait" className="portrait" />
             </div>
             <button className="contact-btn">CONTACT ME</button>
           </div>
@@ -64,7 +64,7 @@ const Hero = () => {
         <div className="about-container">
           {/* Add the circular memoji */}
           <div className="memoji-container">
-            <img src="/memoji.jpg" alt="Pom Memoji" className="memoji" />
+            <img src="https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio/blob/gh-pages/memoji.jpg?raw=true" alt="Pom Memoji" className="memoji" />
           </div>
           <h2>
             Hi, I'm <span className="highlight">Pom</span>. Nice to meet you.
