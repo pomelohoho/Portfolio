@@ -6,7 +6,7 @@ const Projects = () => {
     {
       title: "Statistics Games Site",
       description: "UX/UI Design, Development",
-      image: "https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio/blob/b6d5857caf949549aba9579cb4a7e7099c404cf4/backend.png",
+      image: "https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio/blob/f655c03851208f20844742d0a538a7ee0ff12e14/stat2games.png",
       link: "https://www.stat2games.sites.grinnell.edu/",
     },
     {
