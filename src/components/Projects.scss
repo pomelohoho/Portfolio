@@ -1,0 +1,127 @@
+.selected-cases {
+  background-color: #141414; /* Dark background */
+  color: #fff;
+  padding: 50px 0;
+
+  .selected-header {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #b90707; /* Deep red for project title */
+      text-transform: uppercase;
+      opacity: 0; /* Initial opacity for the fly-in effect */
+      animation: flyIn 1.5s ease forwards; /* Applying the fly-in animation */
+    }
+  }
+
+  /* Fly-in animation keyframes */
+  @keyframes flyIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100%); /* Start off-screen to the left */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Fly in to the original position */
+    }
+  }
+
+  .cases-grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .case-link {
+    text-decoration: none; /* Ensure there's no underline */
+    color: inherit; /* Keep the text color the same */
+
+    &:hover .case-card {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .case-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%; /* Full width */
+    height: 250px; /* Set a consistent height for the cards */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse; /* Reverse direction for even items */
+    }
+
+    img {
+      width: 50%; /* Each image will take 50% of the card's width */
+      height: 100%; /* Match the card's height */
+      object-fit: cover; /* Ensure images maintain aspect ratio and are cropped if needed */
+      filter: grayscale(100%); /* Black and white default */
+      transition: filter 0.5s ease;
+    }
+
+    &:hover img {
+      filter: grayscale(0%); /* Remove grayscale on hover */
+    }
+
+    .case-info {
+      width: 40%; /* Ensure the text block takes up the remaining width */
+      height: 100%; /* Match the card's height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      h3, p {
+        transition: color 0.3s ease; /* Smooth color transition */
+        color: #fff; /* Default text color: white */
+      }
+
+      h3 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 10px 0;
+      }
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        color: #fff; /* Default text color: white */
+      }
+    }
+
+    &:hover .case-info h3, 
+    &:hover .case-info p {
+      color: #b90707; /* Turn the text deep red on hover */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .case-card {
+      flex-direction: column; /* Stack image and text on smaller screens */
+      height: auto; /* Allow the card height to adjust */
+
+      img {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Auto height for mobile */
+      }
+
+      .case-info {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Auto height for mobile */
+      }
+    }
+  }
+}

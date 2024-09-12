@@ -1,0 +1,125 @@
+.timeline-section {
+    padding: 100px 0;
+    text-align: center;
+  
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #b90707;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+  }
+  
+  .timeline {
+    position: relative;
+    padding: 50px 0;
+    background-color: #f5f5f5;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #b90707;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  
+    &:nth-child(odd) {
+      left: 0;
+      text-align: right; /* Align left-side items to the right */
+    }
+  
+    &:nth-child(even) {
+      left: 50%;
+      text-align: left; /* Align right-side items to the left */
+    }
+  }
+  
+  .timeline-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: inline-block;
+    max-width: 80%; /* Ensure the content doesn't stretch too much */
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff;
+  }
+  
+  h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #b90707;
+  }
+  
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .tags {
+    margin-top: 10px;
+  }
+  
+  .tag {
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-item {
+      width: 100%;
+      text-align: left; /* Align everything to the left for smaller screens */
+    }
+  
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+      left: 0;
+    }
+  
+    .timeline::before {
+      left: 50px;
+    }
+  }
+  

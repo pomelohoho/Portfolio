@@ -1,0 +1,141 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  background-color: #141414; /* Default grey background */
+  overflow: hidden; /* To make sure the content doesn't overflow */
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #141414; /* Grey background that stays behind the GIF */
+    z-index: 1; /* Place the grey background behind the content and GIF */
+  }
+
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+    z-index: 2; /* Content should be above the GIF and grey background */
+    transition: transform 0.5s ease; /* Smooth upward text movement */
+  }
+
+  .left-content {
+    flex: 1;
+
+    .creative-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: #f2b8b5;
+    }
+
+    .hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 8rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+  }
+
+  .right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+
+    .description {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      max-width: 400px;
+      margin-bottom: 20px;
+      color: #fff;
+      text-align: center; /* Center the description */
+    }
+
+    .portrait-container {
+      margin: 20px 0; /* Add some margin between the description and contact button */
+      
+      .portrait {
+        width: 200px; /* Adjust the size of the portrait (increased from 150px) */
+        height: 200px;
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover;
+        border: 4px solid #fff; /* Optional: Adds a white border */
+      }
+    }
+
+    .contact-btn {
+      background: none;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 10px 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 30px; /* Adjust this to move the button lower */
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #fff;
+        color: #8b0000;
+      }
+    }
+  }
+}
+.about-section {
+  background-color: #141414; /* Dark grey background */
+  color: #fff; /* White text */
+  padding: 100px 0;
+  text-align: center;
+
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .memoji-container {
+    margin: 0 auto 20px; /* Center and add some spacing */
+  }
+
+  .memoji {
+    width: 150px; /* Adjust size */
+    height: 150px;
+    border-radius: 50%; /* Make it circular */
+    border: 4px solid #fff; /* Add white border */
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    .highlight {
+      color: #8b0000;
+      font-weight: bold;
+    }
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+}
+
+
