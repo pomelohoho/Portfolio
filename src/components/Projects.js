@@ -30,7 +30,7 @@ const Projects = () => {
     {
       title: "IMEDiate - Grinnell Hackathon First Prize",
       description: "UX/UI Design, Development",
-      image: "/imediate.jpeg",
+      image: "https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio/blob/gh-pages/imediate.jpeg?raw=true",
       link: "https://www.canva.com/design/DAFvU6SXLho/rlzRhemMEV9snViv5ucfPg/edit?utm_content=DAFvU6SXLho&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
     {
