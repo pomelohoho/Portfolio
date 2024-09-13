@@ -93,8 +93,7 @@ const Intro = () => {
             Hi, I'm <span className="highlight">Pom</span>. Nice to meet you.
           </h2>
           <p>
-            I am a Full Stack Developer with a passion for building beautiful and user-friendly websites. I have a strong understanding of both front-end and back-end development, and I am excited to put my skills to use in a professional setting. I am a quick learner and a team player, and I am confident that I can be a valuable asset to any web development team.
-          </p>
+          I am a Full Stack Developer with a passion for building elegant, intuitive websites with great user experience. With a strong understanding of both front-end and back-end development, as well as some experience in cloud technologies, I’m eager to apply my skills in a professional setting. I’m a quick learner, a collaborative team player, and confident in my ability to contribute meaningfully to any web development team. Also, I love cats!</p>
         </div>
       </section>
     </>
