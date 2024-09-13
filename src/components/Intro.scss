@@ -138,4 +138,44 @@
   }
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center; /* Centering the icons */
+  margin-top: 20px;
+  position: relative;
+
+  a {
+    position: relative;
+    margin: 0 15px; /* Spacing between icons */
+    text-decoration: none; /* Remove underline */
+    
+    .icon {
+      filter: brightness(0) invert(1); /* Make the icons white */
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover animation */
+    }
+    
+    .social-name {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0; /* Hidden by default */
+      color: #fff;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      transition: opacity 0.3s ease; /* Smooth text appearance */
+    }
+
+    &:hover .icon {
+      transform: scale(1.1); /* Slight zoom on hover */
+    }
+
+    &:hover .social-name {
+      opacity: 1; /* Show the text when hovered */
+    }
+  }
+}
+
 

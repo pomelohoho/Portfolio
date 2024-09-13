@@ -56,7 +56,30 @@ const Intro = () => {
             <div className="portrait-container">
               <img src="https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio/blob/gh-pages/portrait.png?raw=true" alt="Pom Portrait" className="portrait" />
             </div>
-            <button className="contact-btn">CONTACT ME</button>
+            <button 
+              className="contact-btn" 
+              onClick={() => window.location.href = 'mailto:daopomelo@gmail.com?subject=Contact from Portfolio'}>
+              CONTACT ME
+            </button>
+            {/* Horizontal Social Icons */}
+            <div className="social-icons">
+              <a href="https://www.linkedin.com/in/quynh-dao-phuong/" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" className="icon" />
+                <span className="social-name">LinkedIn</span>
+              </a>
+              <a href="https://www.facebook.com/daopomelo/" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook" className="icon" />
+                <span className="social-name">Facebook</span>
+              </a>
+              <a href="https://github.com/pomelohoho" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub" className="icon" />
+                <span className="social-name">GitHub</span>
+              </a>
+              <a href="mailto:daopomelo@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" alt="Email" className="icon" />
+                <span className="social-name">Email</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -74,7 +97,6 @@ const Intro = () => {
           </p>
         </div>
       </section>
-
     </>
   );
 };
