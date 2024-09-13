@@ -90,7 +90,7 @@ const Intro = () => {
             <img src="https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio/blob/gh-pages/memoji.jpg?raw=true" alt="Pom Memoji" className="memoji" />
           </div>
           <h2>
-            Hi, I'm <span className="highlight">Pom</span>. Nice to meet you.
+            Hello World, I'm <span className="highlight">Pom</span>. Nice to meet you.
           </h2>
           <p>
           I am a Full Stack Developer with a passion for building elegant, intuitive websites with great user experience. With a strong understanding of both front-end and back-end development, as well as some experience in cloud technologies, I’m eager to apply my skills in a professional setting. I’m a quick learner, a collaborative team player, and confident in my ability to contribute meaningfully to any web development team. Also, I love cats!</p>
