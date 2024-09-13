@@ -14,19 +14,14 @@
       color: #b90707; /* Deep red for project title */
       text-transform: uppercase;
       opacity: 0; /* Initial opacity for the fly-in effect */
-      animation: flyIn 1.5s ease forwards; /* Applying the fly-in animation */
+      transform: translateY(50px); /* Start off-screen below */
+      transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth animation */
     }
-  }
 
-  /* Fly-in animation keyframes */
-  @keyframes flyIn {
-    from {
-      opacity: 0;
-      transform: translateX(-100%); /* Start off-screen to the left */
-    }
-    to {
+    /* Trigger the animation only when this class is applied */
+    &.fly-in h2 {
       opacity: 1;
-      transform: translateX(0); /* Fly in to the original position */
+      transform: translateY(0); /* Fly in to the original position */
     }
   }
 
@@ -36,6 +31,7 @@
     max-width: 1200px;
     margin: 0 auto;
     gap: 40px;
+    /* No animation applied here */
   }
 
   .case-link {

@@ -1,17 +1,44 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Projects.scss';
 
 const Projects = () => {
+  const projectTitleRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true); // Trigger fly-in for title
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const projectTitle = projectTitleRef.current;
+    if (projectTitle) {
+      observer.observe(projectTitle);
+    }
+
+    return () => {
+      if (projectTitle) {
+        observer.unobserve(projectTitle);
+      }
+    };
+  }, []);
+
   const cases = [
     {
       title: "Statistics Games Site",
-      description: "UX/UI Design, Development",
+      description: "C#, Unity, PHP, Database, MySQL, R, cPanel, Data Visualization, Statistical Modeling",
       image: "https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio/blob/gh-pages/stat2games.png?raw=true",
       link: "https://www.stat2games.sites.grinnell.edu/",
     },
     {
       title: "API ETL with Airflow on AWS",
-      description: "UX/UI Design, Development",
+      description: "ETL Pipeline, Python, API, Airflow, ",
       image: "https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio/blob/gh-pages/wot.png?raw=true",
       link: "https://github.com/pomelohoho/Web-Trust-ETL-with-Airflow-on-AWS",
     },
@@ -55,7 +82,7 @@ const Projects = () => {
 
   return (
     <section className="selected-cases">
-      <div className="selected-header">
+      <div className={`selected-header ${isVisible ? 'fly-in' : ''}`} ref={projectTitleRef}>
         <h2>Projects</h2>
       </div>
       <div className="cases-grid">

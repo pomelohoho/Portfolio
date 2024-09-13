@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './Hero.scss';
+import './Intro.scss';
 
-const Hero = () => {
+const Intro = () => {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const Hero = () => {
           </div>
           <div className="right-content">
             <p className="description">
-              I AM A DEVELOPER AND UX/UI DESIGNER BASED IN CLEVELAND, OHIO. I HAVE MANY YEARS OF EXPERIENCE IN LOVING RODOLFO.
+              I AM POM, A DEVELOPER AND UX/UI DESIGNER BASED IN CLEVELAND, OHIO.
             </p>
             {/* Adding the portrait image between introduction and contact */}
             <div className="portrait-container">
@@ -79,4 +79,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Intro;
