@@ -67,11 +67,11 @@
       margin: 20px 0; /* Add some margin between the description and contact button */
       
       .portrait {
-        width: 200px; /* Adjust the size of the portrait (increased from 150px) */
-        height: 200px;
+        width: 300px; /* Adjust the size of the portrait (increased from 150px) */
+        height: 300px;
         border-radius: 50%; /* Makes the image circular */
         object-fit: cover;
-        border: 4px solid #fff; /* Optional: Adds a white border */
+        border: 4px solid #fff; 
       }
     }
 
@@ -83,7 +83,7 @@
       font-family: 'Montserrat', sans-serif;
       font-size: 1rem;
       cursor: pointer;
-      margin-top: 30px; /* Adjust this to move the button lower */
+      margin-top: 30px; 
       transition: all 0.3s ease;
 
       &:hover {
