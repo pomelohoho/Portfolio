@@ -37,6 +37,12 @@ const Projects = () => {
       link: "https://www.stat2games.sites.grinnell.edu/",
     },
     {
+      title: "TODO-List Application",
+      description: "MySQL, Java, Angular, CRUD, Typescript, Spring Boot, REST-api, SCSS",
+      image: "https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio/blob/master/public/TAskKeeper.png?raw=true",
+      link: "https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio",
+    },
+    {
       title: "API ETL with Airflow on AWS",
       description: "ETL Pipeline, Python, API, Airflow, AWS-S3, AWS-EC2",
       image: "https://github.com/pomelohoho/Pom-Full-stack-developer-portfolio/blob/gh-pages/wot.png?raw=true",
