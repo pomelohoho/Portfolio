@@ -35,6 +35,7 @@ const Skills = () => {
             <li>MySQL</li>
             <li>C/C++</li>
             <li>C#</li>
+            <li>Spring Boot</li>
             <li>RESTful APIs</li>
           </ul>
         </div>
