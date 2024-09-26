@@ -50,7 +50,7 @@ const Intro = () => {
           </div>
           <div className="right-content">
             <p className="description">
-              I AM POM, A FULL-STACK DEVELOPER AND UX/UI DESIGNER BASED IN CLEVELAND, OHIO.
+              I AM POM, A FULL-STACK DEVELOPER AND UX/UI DESIGNER. PRESIDENT OF VIETNAMESE STUDENT ASSOCIATION IN GRINNELL COLLEGE
             </p>
             {/* Adding the portrait image between introduction and contact */}
             <div className="portrait-container">
